@@ -27,7 +27,7 @@ export const SampleInfluencerProfile = () => {
                 <div className="flex items-start space-x-6">
                   <Avatar className="w-24 h-24 border-4 border-white/20">
                     <AvatarImage 
-                      src="https://images.unsplash.com/photo-1494790108755-2616b812b833?w=200&h=200&fit=crop&crop=face" 
+                      src="https://photos.google.com/share/AF1QipM148bVzt9MvA4bZ5bETB3spqL22Oi8MfHE-oA5aefIiKBoSQUKvMx3aoKLmmo2Vg/photo/AF1QipOpqF_TUtvGo_ffaEkMQowFhi9zK01YEuXvXIEQ?key=VnJHQ3U3YkFpcG1rS2hEb3FTai04d0Qwa1paTmxn" 
                       alt="Sofia Martinez"
                     />
                     <AvatarFallback>SM</AvatarFallback>
