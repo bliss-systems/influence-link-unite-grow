@@ -20,7 +20,10 @@ export const PricingSection = () => {
         <div className="space-y-16">
           {/* Brand Pricing */}
           <div>
-            <h3 className="text-2xl font-bold text-center mb-8 text-slate-800">For Brands</h3>
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">For Brands</h3>
+              <p className="text-lg text-blue-600 font-medium">More access, more growth.</p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="relative border-2 border-slate-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg">
                 <CardHeader className="text-center pb-4">
@@ -34,15 +37,15 @@ export const PricingSection = () => {
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Access to 5,000+ creators</span>
+                      <span className="text-sm">Access to emerging creators (5K+)</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Basic audience insights</span>
+                      <span className="text-sm">Basic audience demographics</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Campaign management tools</span>
+                      <span className="text-sm">Single market campaigns</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
@@ -66,15 +69,15 @@ export const PricingSection = () => {
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Access to 25,000+ creators</span>
+                      <span className="text-sm">Access to mid-tier creators (25K+)</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Advanced analytics & reporting</span>
+                      <span className="text-sm">Deep audience insights & analytics</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Cross-border campaign tools</span>
+                      <span className="text-sm">Multi-market campaign tools</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
@@ -101,15 +104,15 @@ export const PricingSection = () => {
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Access to all 50,000+ creators</span>
+                      <span className="text-sm">Access to top-tier creators (50K+)</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Premium creator access</span>
+                      <span className="text-sm">Premium creator exclusives</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">White-label solutions</span>
+                      <span className="text-sm">Global market penetration</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
@@ -117,7 +120,7 @@ export const PricingSection = () => {
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Custom integrations</span>
+                      <span className="text-sm">Custom integrations & API</span>
                     </div>
                   </div>
                   <Button className="w-full bg-purple-600 hover:bg-purple-700">Contact Sales</Button>
@@ -128,7 +131,10 @@ export const PricingSection = () => {
           
           {/* Influencer Pricing */}
           <div>
-            <h3 className="text-2xl font-bold text-center mb-8 text-slate-800">For Influencers</h3>
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">For Influencers</h3>
+              <p className="text-lg text-purple-600 font-medium">Get seen by the right brands.</p>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="relative border-2 border-slate-200 hover:border-green-300 transition-all duration-300 hover:shadow-lg">
                 <CardHeader className="text-center pb-4">
@@ -142,15 +148,19 @@ export const PricingSection = () => {
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Basic profile creation</span>
+                      <span className="text-sm">Basic profile visibility</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Apply to standard campaigns</span>
+                      <span className="text-sm">Apply to open campaigns</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
                       <span className="text-sm">Basic portfolio showcase</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Check className="w-4 h-4 text-green-600" />
+                      <span className="text-sm">Community access</span>
                     </div>
                   </div>
                   <Button variant="outline" className="w-full">Get Started</Button>
@@ -178,11 +188,15 @@ export const PricingSection = () => {
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Performance analytics</span>
+                      <span className="text-sm">Performance analytics dashboard</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
                       <span className="text-sm">Priority application review</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Check className="w-4 h-4 text-green-600" />
+                      <span className="text-sm">Brand matching alerts</span>
                     </div>
                   </div>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700">Upgrade Now</Button>
@@ -209,7 +223,7 @@ export const PricingSection = () => {
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
-                      <span className="text-sm">Advanced portfolio tools</span>
+                      <span className="text-sm">Advanced analytics & insights</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <Check className="w-4 h-4 text-green-600" />
