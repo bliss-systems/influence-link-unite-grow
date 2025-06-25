@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -58,6 +59,23 @@ const Index = () => {
         <CampaignManagement />
         <WhyChooseUs />
         <TestimonialsSection />
+        
+        {/* Trust-Boosting Statement */}
+        <section className="py-16 bg-white">
+          <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-100">
+              <div className="flex items-center justify-center mb-4">
+                <Globe className="w-8 h-8 text-blue-600 mr-3" />
+                <Users className="w-8 h-8 text-purple-600 mr-3" />
+                <TrendingUp className="w-8 h-8 text-blue-600" />
+              </div>
+              <p className="text-xl md:text-2xl font-semibold text-slate-800 leading-relaxed">
+                Hundreds of creators and brands across Africa, Europe, and the diaspora use InfluenceLink to grow faster.
+              </p>
+            </div>
+          </div>
+        </section>
+        
         <CTASection />
       </div>
 
