@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,6 +12,7 @@ import { CampaignManagement } from "@/components/CampaignManagement";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { CTASection } from "@/components/CTASection";
+import { NoCommissionSection } from "@/components/NoCommissionSection";
 
 const Index = () => {
   return (
@@ -49,6 +49,7 @@ const Index = () => {
 
       <div className="pt-16">
         <HeroSection />
+        <NoCommissionSection />
         <HowItWorks />
         <PricingSection />
         <ExploreInfluencers />
