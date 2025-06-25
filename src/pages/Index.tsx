@@ -13,6 +13,7 @@ import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { CTASection } from "@/components/CTASection";
 import { NoCommissionSection } from "@/components/NoCommissionSection";
+import { SampleInfluencerProfile } from "@/components/SampleInfluencerProfile";
 
 const Index = () => {
   return (
@@ -51,6 +52,7 @@ const Index = () => {
         <HeroSection />
         <NoCommissionSection />
         <HowItWorks />
+        <SampleInfluencerProfile />
         <PricingSection />
         <ExploreInfluencers />
         <CampaignManagement />
