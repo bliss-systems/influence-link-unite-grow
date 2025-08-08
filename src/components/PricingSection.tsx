@@ -3,17 +3,19 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Check, Crown, Zap, Star } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 export const PricingSection = () => {
+  const { t } = useTranslation();
   return (
     <section id="pricing" className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent">
-            Simple, Transparent Pricing
+            {t("pricing.title")}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            No commissions, no hidden fees. Pay for access and tools that help you succeed.
+            {t("pricing.subtitle")}
           </p>
         </div>
         
@@ -21,8 +23,8 @@ export const PricingSection = () => {
           {/* Brand Pricing */}
           <div>
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-slate-800 mb-2">For Brands</h3>
-              <p className="text-lg text-blue-600 font-medium">More access, more growth.</p>
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">{t("pricing.brands.title")}</h3>
+              <p className="text-lg text-blue-600 font-medium">{t("pricing.brands.subtitle")}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="relative border-2 border-slate-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg">
@@ -132,8 +134,8 @@ export const PricingSection = () => {
           {/* Influencer Pricing */}
           <div>
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-slate-800 mb-2">For Influencers</h3>
-              <p className="text-lg text-purple-600 font-medium">Get seen by the right brands.</p>
+              <h3 className="text-2xl font-bold text-slate-800 mb-2">{t("pricing.influencers.title")}</h3>
+              <p className="text-lg text-purple-600 font-medium">{t("pricing.influencers.subtitle")}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <Card className="relative border-2 border-slate-200 hover:border-green-300 transition-all duration-300 hover:shadow-lg">
