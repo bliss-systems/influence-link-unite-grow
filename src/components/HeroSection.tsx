@@ -1,8 +1,10 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Globe, Users, TrendingUp } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 export const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative py-24 overflow-hidden">
       {/* Background Elements */}
@@ -14,26 +16,25 @@ export const HeroSection = () => {
         <div className="text-center max-w-4xl mx-auto">
           <div className="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm border border-blue-200 rounded-full px-4 py-2 mb-8">
             <Globe className="w-4 h-4 text-blue-600" />
-            <span className="text-sm font-medium text-blue-700">Global Influencer Marketing Platform</span>
+            <span className="text-sm font-medium text-blue-700">{t("hero.tagline")}</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-slate-900 via-blue-800 to-purple-800 bg-clip-text text-transparent leading-tight">
-            Discover the right influencers for every market
+            {t("hero.heading")}
           </h1>
           
           <p className="text-xl text-slate-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Connect with authentic creators worldwide. Access cultural intelligence, audience insights, 
-            and cross-border campaigns—all with zero commissions.
+            {t("hero.description")}
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
             <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-xl group">
-              For Brands
+              {t("hero.for_brands")}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            
+
             <Button size="lg" variant="outline" className="border-2 border-slate-300 hover:border-blue-300 px-8 py-3 rounded-xl group">
-              For Influencers
+              {t("hero.for_influencers")}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
@@ -45,7 +46,7 @@ export const HeroSection = () => {
                 <Users className="w-6 h-6 text-blue-600" />
               </div>
               <div className="text-3xl font-bold text-slate-900">50K+</div>
-              <div className="text-slate-600">Active Creators</div>
+              <div className="text-slate-600">{t("hero.stats.active_creators")}</div>
             </div>
             
             <div className="text-center">
@@ -53,7 +54,7 @@ export const HeroSection = () => {
                 <Globe className="w-6 h-6 text-purple-600" />
               </div>
               <div className="text-3xl font-bold text-slate-900">120+</div>
-              <div className="text-slate-600">Countries</div>
+              <div className="text-slate-600">{t("hero.stats.countries")}</div>
             </div>
             
             <div className="text-center">
@@ -61,7 +62,7 @@ export const HeroSection = () => {
                 <TrendingUp className="w-6 h-6 text-green-600" />
               </div>
               <div className="text-3xl font-bold text-slate-900">95%</div>
-              <div className="text-slate-600">Success Rate</div>
+              <div className="text-slate-600">{t("hero.stats.success_rate")}</div>
             </div>
           </div>
         </div>

@@ -4,7 +4,19 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ArrowRight, Globe, Users, TrendingUp, Shield, Heart, Star, Filter, Search, MapPin, Eye } from "lucide-react";
+import {
+  ArrowRight,
+  Globe,
+  Users,
+  TrendingUp,
+  Shield,
+  Heart,
+  Star,
+  Filter,
+  Search,
+  MapPin,
+  Eye
+} from "lucide-react";
 import { HeroSection } from "@/components/HeroSection";
 import { HowItWorks } from "@/components/HowItWorks";
 import { PricingSection } from "@/components/PricingSection";
@@ -15,8 +27,10 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { CTASection } from "@/components/CTASection";
 import { NoCommissionSection } from "@/components/NoCommissionSection";
 import { SampleInfluencerProfile } from "@/components/SampleInfluencerProfile";
+import { useTranslation, Language } from "@/lib/i18n";
 
 const Index = () => {
+  const { t, language, setLanguage } = useTranslation();
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Navigation */}
@@ -31,18 +45,36 @@ const Index = () => {
                 InfluenceLink
               </span>
             </div>
-            
+
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#how-it-works" className="text-slate-700 hover:text-blue-600 transition-colors">How it Works</a>
-              <a href="#pricing" className="text-slate-700 hover:text-blue-600 transition-colors">Pricing</a>
-              <a href="#explore" className="text-slate-700 hover:text-blue-600 transition-colors">Explore</a>
-              <a href="#about" className="text-slate-700 hover:text-blue-600 transition-colors">About</a>
+              <a href="#how-it-works" className="text-slate-700 hover:text-blue-600 transition-colors">
+                {t("nav.how_it_works")}
+              </a>
+              <a href="#pricing" className="text-slate-700 hover:text-blue-600 transition-colors">
+                {t("nav.pricing")}
+              </a>
+              <a href="#explore" className="text-slate-700 hover:text-blue-600 transition-colors">
+                {t("nav.explore")}
+              </a>
+              <a href="#about" className="text-slate-700 hover:text-blue-600 transition-colors">
+                {t("nav.about")}
+              </a>
             </div>
-            
+
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" className="text-slate-700">Sign In</Button>
+              <select
+                value={language}
+                onChange={(e) => setLanguage(e.target.value as Language)}
+                className="border border-slate-300 rounded-md px-2 py-1 text-slate-700"
+              >
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+              </select>
+              <Button variant="ghost" className="text-slate-700">
+                {t("nav.sign_in")}
+              </Button>
               <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                Get Started
+                {t("nav.get_started")}
               </Button>
             </div>
           </div>
@@ -70,7 +102,7 @@ const Index = () => {
                 <TrendingUp className="w-8 h-8 text-blue-600" />
               </div>
               <p className="text-xl md:text-2xl font-semibold text-slate-800 leading-relaxed">
-                Hundreds of creators and brands across Africa, Europe, and the diaspora use InfluenceLink to grow faster.
+                {t("trust.statement")}
               </p>
             </div>
           </div>
@@ -91,33 +123,33 @@ const Index = () => {
                 <span className="text-xl font-bold">InfluenceLink</span>
               </div>
               <p className="text-slate-400 max-w-md">
-                Connecting brands and influencers across borders with cultural intelligence and zero commissions.
+                {t("footer.description")}
               </p>
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4">Platform</h3>
+              <h3 className="font-semibold mb-4">{t("footer.platform")}</h3>
               <div className="space-y-2 text-slate-400">
-                <p>For Brands</p>
-                <p>For Influencers</p>
-                <p>Analytics</p>
-                <p>Campaign Tools</p>
+                <p>{t("footer.for_brands")}</p>
+                <p>{t("footer.for_influencers")}</p>
+                <p>{t("footer.analytics")}</p>
+                <p>{t("footer.campaign_tools")}</p>
               </div>
             </div>
             
             <div>
-              <h3 className="font-semibold mb-4">Support</h3>
+              <h3 className="font-semibold mb-4">{t("footer.support")}</h3>
               <div className="space-y-2 text-slate-400">
-                <p>Help Center</p>
-                <p>Contact Us</p>
-                <p>Privacy Policy</p>
-                <p>Terms of Service</p>
+                <p>{t("footer.help_center")}</p>
+                <p>{t("footer.contact")}</p>
+                <p>{t("footer.privacy")}</p>
+                <p>{t("footer.terms")}</p>
               </div>
             </div>
           </div>
           
           <div className="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 InfluenceLink. All rights reserved.</p>
+            <p>&copy; 2024 InfluenceLink. {t("footer.rights")}</p>
           </div>
         </div>
       </footer>
