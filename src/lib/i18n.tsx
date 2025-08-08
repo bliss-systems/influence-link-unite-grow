@@ -32,7 +32,25 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.terms": "Terms of Service",
     "footer.rights": "All rights reserved.",
     "notfound.oops": "Oops! Page not found",
-    "notfound.return_home": "Return to Home"
+    "notfound.return_home": "Return to Home",
+    "explore.heading": "Explore Influencers",
+    "explore.filters": "Filters",
+    "explore.location.all": "All",
+    "explore.location.singapore": "Singapore",
+    "explore.location.mexico_city": "Mexico City",
+    "explore.location.mumbai": "Mumbai",
+    "explore.location.london": "London",
+    "explore.location.tokyo": "Tokyo",
+    "explore.location.stockholm": "Stockholm",
+    "explore.category.all": "All",
+    "explore.category.fashion": "Fashion",
+    "explore.category.technology": "Technology",
+    "explore.category.travel": "Travel",
+    "explore.category.wellness": "Wellness",
+    "explore.category.food": "Food",
+    "explore.category.lifestyle": "Lifestyle",
+    "explore.column.followers": "Followers",
+    "explore.column.engagement": "Engagement"
   },
   fr: {
     "nav.how_it_works": "Comment ça marche",
@@ -63,7 +81,25 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.terms": "Conditions d'utilisation",
     "footer.rights": "Tous droits réservés.",
     "notfound.oops": "Oups! Page introuvable",
-    "notfound.return_home": "Retour à l'accueil"
+    "notfound.return_home": "Retour à l'accueil",
+    "explore.heading": "Explorer les influenceurs",
+    "explore.filters": "Filtres",
+    "explore.location.all": "Tous",
+    "explore.location.singapore": "Singapour",
+    "explore.location.mexico_city": "Mexico",
+    "explore.location.mumbai": "Mumbai",
+    "explore.location.london": "Londres",
+    "explore.location.tokyo": "Tokyo",
+    "explore.location.stockholm": "Stockholm",
+    "explore.category.all": "Toutes",
+    "explore.category.fashion": "Mode",
+    "explore.category.technology": "Technologie",
+    "explore.category.travel": "Voyage",
+    "explore.category.wellness": "Bien-être",
+    "explore.category.food": "Cuisine",
+    "explore.category.lifestyle": "Style de vie",
+    "explore.column.followers": "Abonnés",
+    "explore.column.engagement": "Engagement"
   }
 };
 
