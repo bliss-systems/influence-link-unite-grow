@@ -1,28 +1,45 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
-import { Search, Users, MessageCircle, BarChart, UserPlus, Star, Zap, Trophy } from "lucide-react";
+import {
+  Search,
+  Users,
+  MessageCircle,
+  BarChart,
+  UserPlus,
+  Star,
+  Zap,
+  Trophy
+} from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 export const HowItWorks = () => {
+  const { t } = useTranslation();
   return (
     <section id="how-it-works" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent">
-            How It Works
+            {t("howItWorks.title")}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Simple journeys designed for brands and influencers to connect, collaborate, and succeed together.
+            {t("howItWorks.description")}
           </p>
         </div>
-        
+
         <Tabs defaultValue="brands" className="max-w-6xl mx-auto">
           <TabsList className="grid w-full grid-cols-2 mb-12 bg-slate-100 p-1 rounded-xl">
-            <TabsTrigger value="brands" className="py-3 px-6 rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm">
-              Brand Journey
+            <TabsTrigger
+              value="brands"
+              className="py-3 px-6 rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm"
+            >
+              {t("howItWorks.brandJourney")}
             </TabsTrigger>
-            <TabsTrigger value="influencers" className="py-3 px-6 rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm">
-              Influencer Journey
+            <TabsTrigger
+              value="influencers"
+              className="py-3 px-6 rounded-lg data-[state=active]:bg-white data-[state=active]:shadow-sm"
+            >
+              {t("howItWorks.influencerJourney")}
             </TabsTrigger>
           </TabsList>
           
@@ -36,8 +53,12 @@ export const HowItWorks = () => {
                   <div className="absolute top-4 right-4 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
                     <span className="text-sm font-semibold text-blue-600">1</span>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Discover</h3>
-                  <p className="text-slate-600 text-sm">Search influencers by location, audience demographics, language, and cultural alignment.</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {t("howItWorks.brands.discover.title")}
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    {t("howItWorks.brands.discover.description")}
+                  </p>
                 </CardContent>
               </Card>
               
@@ -49,8 +70,12 @@ export const HowItWorks = () => {
                   <div className="absolute top-4 right-4 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
                     <span className="text-sm font-semibold text-purple-600">2</span>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Connect</h3>
-                  <p className="text-slate-600 text-sm">Access detailed creator profiles, engagement data, and audience insights to make informed decisions.</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {t("howItWorks.brands.connect.title")}
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    {t("howItWorks.brands.connect.description")}
+                  </p>
                 </CardContent>
               </Card>
               
@@ -62,8 +87,12 @@ export const HowItWorks = () => {
                   <div className="absolute top-4 right-4 w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
                     <span className="text-sm font-semibold text-green-600">3</span>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Collaborate</h3>
-                  <p className="text-slate-600 text-sm">Launch campaigns, manage communications, and track deliverables in one unified platform.</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {t("howItWorks.brands.collaborate.title")}
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    {t("howItWorks.brands.collaborate.description")}
+                  </p>
                 </CardContent>
               </Card>
               
@@ -75,8 +104,12 @@ export const HowItWorks = () => {
                   <div className="absolute top-4 right-4 w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center">
                     <span className="text-sm font-semibold text-orange-600">4</span>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Analyze</h3>
-                  <p className="text-slate-600 text-sm">Get comprehensive performance reports, ROI analysis, and cross-market insights.</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {t("howItWorks.brands.analyze.title")}
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    {t("howItWorks.brands.analyze.description")}
+                  </p>
                 </CardContent>
               </Card>
             </div>
@@ -92,8 +125,12 @@ export const HowItWorks = () => {
                   <div className="absolute top-4 right-4 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center">
                     <span className="text-sm font-semibold text-pink-600">1</span>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Join</h3>
-                  <p className="text-slate-600 text-sm">Create your profile, showcase your content, and highlight your unique cultural perspective.</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {t("howItWorks.influencers.join.title")}
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    {t("howItWorks.influencers.join.description")}
+                  </p>
                 </CardContent>
               </Card>
               
@@ -105,8 +142,12 @@ export const HowItWorks = () => {
                   <div className="absolute top-4 right-4 w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
                     <span className="text-sm font-semibold text-indigo-600">2</span>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Curate</h3>
-                  <p className="text-slate-600 text-sm">Organize your best content, set your rates, and apply to premium campaigns that match your brand.</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {t("howItWorks.influencers.curate.title")}
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    {t("howItWorks.influencers.curate.description")}
+                  </p>
                 </CardContent>
               </Card>
               
@@ -118,8 +159,12 @@ export const HowItWorks = () => {
                   <div className="absolute top-4 right-4 w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center">
                     <span className="text-sm font-semibold text-teal-600">3</span>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Create</h3>
-                  <p className="text-slate-600 text-sm">Work with global brands, create authentic content, and expand your international reach.</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {t("howItWorks.influencers.create.title")}
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    {t("howItWorks.influencers.create.description")}
+                  </p>
                 </CardContent>
               </Card>
               
@@ -131,8 +176,12 @@ export const HowItWorks = () => {
                   <div className="absolute top-4 right-4 w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center">
                     <span className="text-sm font-semibold text-amber-600">4</span>
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">Grow</h3>
-                  <p className="text-slate-600 text-sm">Track your performance, build long-term partnerships, and scale your influence globally.</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {t("howItWorks.influencers.grow.title")}
+                  </h3>
+                  <p className="text-slate-600 text-sm">
+                    {t("howItWorks.influencers.grow.description")}
+                  </p>
                 </CardContent>
               </Card>
             </div>
