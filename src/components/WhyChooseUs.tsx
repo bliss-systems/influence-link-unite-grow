@@ -1,43 +1,46 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Globe, Shield, Zap, Heart, TrendingUp, Users } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 export const WhyChooseUs = () => {
+  const { t } = useTranslation();
+
   const features = [
     {
       icon: Globe,
-      title: "Cultural Intelligence",
-      description: "Deep understanding of local markets, languages, and cultural nuances ensures authentic connections.",
+      title: t("why.cultural_intelligence.title"),
+      description: t("why.cultural_intelligence.description"),
       color: "blue"
     },
     {
       icon: Shield,
-      title: "Zero Commission Model",
-      description: "Keep 100% of your earnings. We make money from data access and premium tools, not your success.",
+      title: t("why.zero_commission.title"),
+      description: t("why.zero_commission.description"),
       color: "green"
     },
     {
       icon: Zap,
-      title: "Local Payment Support",
-      description: "Support for 50+ currencies and local payment methods. Get paid in your preferred currency.",
+      title: t("why.local_payment.title"),
+      description: t("why.local_payment.description"),
       color: "purple"
     },
     {
       icon: Heart,
-      title: "Authentic Relationships",
-      description: "Focus on long-term partnerships rather than one-off transactions. Build meaningful brand connections.",
+      title: t("why.authentic_relationships.title"),
+      description: t("why.authentic_relationships.description"),
       color: "pink"
     },
     {
       icon: TrendingUp,
-      title: "Data-Driven Insights",
-      description: "Advanced analytics help optimize campaigns and understand cross-cultural audience behavior.",
+      title: t("why.data_insights.title"),
+      description: t("why.data_insights.description"),
       color: "orange"
     },
     {
       icon: Users,
-      title: "Diverse Creator Network",
-      description: "Access creators from 120+ countries with authentic representation across all demographics.",
+      title: t("why.diverse_creator_network.title"),
+      description: t("why.diverse_creator_network.description"),
       color: "teal"
     }
   ];
@@ -59,7 +62,7 @@ export const WhyChooseUs = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent">
-            Why Choose InfluenceLink?
+            {t("why.heading")}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             We're not just another influencer platform. We're building the future of global brand partnerships with cultural intelligence at our core.
