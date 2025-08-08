@@ -2,17 +2,19 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MessageCircle, BarChart, Calendar, Target, Zap, Globe } from "lucide-react";
+import { useTranslation } from "@/lib/i18n";
 
 export const CampaignManagement = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent">
-            Campaign Management
+            {t("campaign.heading")}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Powerful tools to create, manage, and analyze campaigns that resonate across cultures and borders.
+            {t("campaign.description")}
           </p>
         </div>
         
@@ -24,8 +26,8 @@ export const CampaignManagement = () => {
                   <Target className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Smart Campaign Creation</h3>
-                  <p className="text-slate-600">Set up campaigns with intelligent targeting based on demographics, interests, location, and cultural preferences. Our AI suggests optimal creator matches.</p>
+                  <h3 className="text-xl font-semibold mb-2">{t("campaign.features.smart_creation.title")}</h3>
+                  <p className="text-slate-600">{t("campaign.features.smart_creation.description")}</p>
                 </div>
               </div>
               
@@ -34,8 +36,8 @@ export const CampaignManagement = () => {
                   <MessageCircle className="w-6 h-6 text-purple-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Unified Communication</h3>
-                  <p className="text-slate-600">Manage all creator communications in one place. Real-time messaging, file sharing, and approval workflows streamline collaboration.</p>
+                  <h3 className="text-xl font-semibold mb-2">{t("campaign.features.unified_communication.title")}</h3>
+                  <p className="text-slate-600">{t("campaign.features.unified_communication.description")}</p>
                 </div>
               </div>
               
@@ -44,8 +46,8 @@ export const CampaignManagement = () => {
                   <BarChart className="w-6 h-6 text-green-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Real-time Analytics</h3>
-                  <p className="text-slate-600">Track campaign performance across platforms and regions. Get insights on reach, engagement, conversions, and cultural sentiment.</p>
+                  <h3 className="text-xl font-semibold mb-2">{t("campaign.features.analytics.title")}</h3>
+                  <p className="text-slate-600">{t("campaign.features.analytics.description")}</p>
                 </div>
               </div>
               
@@ -54,8 +56,8 @@ export const CampaignManagement = () => {
                   <Globe className="w-6 h-6 text-orange-600" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">Cross-border Support</h3>
-                  <p className="text-slate-600">Handle multi-currency payments, time zone coordination, and local compliance requirements seamlessly.</p>
+                  <h3 className="text-xl font-semibold mb-2">{t("campaign.features.cross_border.title")}</h3>
+                  <p className="text-slate-600">{t("campaign.features.cross_border.description")}</p>
                 </div>
               </div>
             </div>
