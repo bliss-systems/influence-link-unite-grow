@@ -32,7 +32,17 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.terms": "Terms of Service",
     "footer.rights": "All rights reserved.",
     "notfound.oops": "Oops! Page not found",
-    "notfound.return_home": "Return to Home"
+    "notfound.return_home": "Return to Home",
+    "campaign.heading": "Campaign Management",
+    "campaign.description": "Powerful tools to create, manage, and analyze campaigns that resonate across cultures and borders.",
+    "campaign.features.smart_creation.title": "Smart Campaign Creation",
+    "campaign.features.smart_creation.description": "Set up campaigns with intelligent targeting based on demographics, interests, location, and cultural preferences. Our AI suggests optimal creator matches.",
+    "campaign.features.unified_communication.title": "Unified Communication",
+    "campaign.features.unified_communication.description": "Manage all creator communications in one place. Real-time messaging, file sharing, and approval workflows streamline collaboration.",
+    "campaign.features.analytics.title": "Real-time Analytics",
+    "campaign.features.analytics.description": "Track campaign performance across platforms and regions. Get insights on reach, engagement, conversions, and cultural sentiment.",
+    "campaign.features.cross_border.title": "Cross-border Support",
+    "campaign.features.cross_border.description": "Handle multi-currency payments, time zone coordination, and local compliance requirements seamlessly."
   },
   fr: {
     "nav.how_it_works": "Comment ça marche",
@@ -63,7 +73,17 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.terms": "Conditions d'utilisation",
     "footer.rights": "Tous droits réservés.",
     "notfound.oops": "Oups! Page introuvable",
-    "notfound.return_home": "Retour à l'accueil"
+    "notfound.return_home": "Retour à l'accueil",
+    "campaign.heading": "Gestion des campagnes",
+    "campaign.description": "Des outils puissants pour créer, gérer et analyser des campagnes qui résonnent à travers les cultures et les frontières.",
+    "campaign.features.smart_creation.title": "Création de campagne intelligente",
+    "campaign.features.smart_creation.description": "Configurez des campagnes avec un ciblage intelligent basé sur la démographie, les centres d'intérêt, la localisation et les préférences culturelles. Notre IA suggère les créateurs les plus adaptés.",
+    "campaign.features.unified_communication.title": "Communication unifiée",
+    "campaign.features.unified_communication.description": "Gérez toutes les communications avec les créateurs en un seul endroit. Messagerie en temps réel, partage de fichiers et flux d'approbation simplifient la collaboration.",
+    "campaign.features.analytics.title": "Analyses en temps réel",
+    "campaign.features.analytics.description": "Suivez les performances des campagnes sur les plateformes et les régions. Obtenez des insights sur la portée, l'engagement, les conversions et le sentiment culturel.",
+    "campaign.features.cross_border.title": "Support transfrontalier",
+    "campaign.features.cross_border.description": "Gérez en toute simplicité les paiements multidevises, la coordination des fuseaux horaires et les exigences de conformité locales."
   }
 };
 
