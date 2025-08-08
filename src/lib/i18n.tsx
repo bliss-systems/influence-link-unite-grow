@@ -32,7 +32,25 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.terms": "Terms of Service",
     "footer.rights": "All rights reserved.",
     "notfound.oops": "Oops! Page not found",
-    "notfound.return_home": "Return to Home"
+    "notfound.return_home": "Return to Home",
+    "sampleProfile.heading": "Sample Influencer Profile",
+    "sampleProfile.description": "This is what brands get access to with our platform. Rich profiles with audience insights, engagement data, and direct contact capabilities.",
+    "sampleProfile.followers": "Followers",
+    "sampleProfile.engagement_rate": "Engagement Rate",
+    "sampleProfile.avg_post_value": "Avg. Post Value",
+    "sampleProfile.audience_demographics": "Audience Demographics",
+    "sampleProfile.age_distribution": "Age Distribution",
+    "sampleProfile.gender_distribution": "Gender Distribution",
+    "sampleProfile.lifestyle_travel": "Lifestyle & Travel",
+    "sampleProfile.spanish": "Spanish",
+    "sampleProfile.english": "English",
+    "sampleProfile.female": "Female",
+    "sampleProfile.male": "Male",
+    "sampleProfile.other": "Other",
+    "sampleProfile.request_contact": "Request Contact",
+    "sampleProfile.view_full_analytics": "View Full Analytics",
+    "sampleProfile.pro_only": "Pro Only",
+    "sampleProfile.pro_message": "Contact details and advanced analytics available with Pro and Elite plans"
   },
   fr: {
     "nav.how_it_works": "Comment ça marche",
@@ -63,7 +81,25 @@ const translations: Record<Language, Record<string, string>> = {
     "footer.terms": "Conditions d'utilisation",
     "footer.rights": "Tous droits réservés.",
     "notfound.oops": "Oups! Page introuvable",
-    "notfound.return_home": "Retour à l'accueil"
+    "notfound.return_home": "Retour à l'accueil",
+    "sampleProfile.heading": "Profil d'influenceur exemple",
+    "sampleProfile.description": "Voici ce à quoi les marques ont accès avec notre plateforme. Profils riches avec informations sur l'audience, données d'engagement et possibilité de contact direct.",
+    "sampleProfile.followers": "Abonnés",
+    "sampleProfile.engagement_rate": "Taux d'engagement",
+    "sampleProfile.avg_post_value": "Valeur moyenne par publication",
+    "sampleProfile.audience_demographics": "Démographie de l'audience",
+    "sampleProfile.age_distribution": "Répartition par âge",
+    "sampleProfile.gender_distribution": "Répartition par genre",
+    "sampleProfile.lifestyle_travel": "Lifestyle et voyage",
+    "sampleProfile.spanish": "Espagnol",
+    "sampleProfile.english": "Anglais",
+    "sampleProfile.female": "Femme",
+    "sampleProfile.male": "Homme",
+    "sampleProfile.other": "Autre",
+    "sampleProfile.request_contact": "Demander le contact",
+    "sampleProfile.view_full_analytics": "Voir toutes les analyses",
+    "sampleProfile.pro_only": "Réservé aux pros",
+    "sampleProfile.pro_message": "Les coordonnées et les analyses avancées sont disponibles avec les forfaits Pro et Elite"
   }
 };
 

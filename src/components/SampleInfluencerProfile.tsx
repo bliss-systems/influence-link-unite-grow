@@ -4,18 +4,19 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Users, TrendingUp, Lock, Eye, MessageCircle, BarChart3 } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { useTranslation } from "@/lib/i18n";
 
 export const SampleInfluencerProfile = () => {
+  const { t } = useTranslation();
   return (
     <section className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-900 to-blue-800 bg-clip-text text-transparent">
-            Sample Influencer Profile
+            {t("sampleProfile.heading")}
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            This is what brands get access to with our platform. Rich profiles with audience insights, 
-            engagement data, and direct contact capabilities.
+            {t("sampleProfile.description")}
           </p>
         </div>
 
@@ -49,14 +50,14 @@ export const SampleInfluencerProfile = () => {
                         <span>Barcelona, Spain</span>
                       </div>
                       <Badge className="bg-white/20 text-white border-white/30">
-                        Lifestyle & Travel
+                        {t("sampleProfile.lifestyle_travel")}
                       </Badge>
                       <div className="flex space-x-1">
                         <Badge variant="outline" className="bg-white/10 text-white border-white/30 text-xs">
-                          Spanish
+                          {t("sampleProfile.spanish")}
                         </Badge>
                         <Badge variant="outline" className="bg-white/10 text-white border-white/30 text-xs">
-                          English
+                          {t("sampleProfile.english")}
                         </Badge>
                       </div>
                     </div>
@@ -71,34 +72,38 @@ export const SampleInfluencerProfile = () => {
                     <Users className="w-5 h-5 text-slate-600" />
                     <span className="text-2xl font-bold text-slate-900">285K</span>
                   </div>
-                  <p className="text-sm text-slate-600">Followers</p>
+                  <p className="text-sm text-slate-600">{t("sampleProfile.followers")}</p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="flex items-center justify-center space-x-2 mb-2">
                     <TrendingUp className="w-5 h-5 text-green-600" />
                     <span className="text-2xl font-bold text-slate-900">4.8%</span>
                   </div>
-                  <p className="text-sm text-slate-600">Engagement Rate</p>
+                  <p className="text-sm text-slate-600">{t("sampleProfile.engagement_rate")}</p>
                 </div>
-                
+
                 <div className="text-center">
                   <div className="flex items-center justify-center space-x-2 mb-2">
                     <BarChart3 className="w-5 h-5 text-blue-600" />
                     <span className="text-2xl font-bold text-slate-900">€2.4K</span>
                   </div>
-                  <p className="text-sm text-slate-600">Avg. Post Value</p>
+                  <p className="text-sm text-slate-600">{t("sampleProfile.avg_post_value")}</p>
                 </div>
               </div>
 
               {/* Audience Demographics */}
               <div className="p-8 border-t border-slate-100">
-                <h4 className="text-lg font-semibold text-slate-900 mb-6">Audience Demographics</h4>
-                
+                <h4 className="text-lg font-semibold text-slate-900 mb-6">
+                  {t("sampleProfile.audience_demographics")}
+                </h4>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   {/* Age Distribution */}
                   <div>
-                    <h5 className="font-medium text-slate-800 mb-4">Age Distribution</h5>
+                    <h5 className="font-medium text-slate-800 mb-4">
+                      {t("sampleProfile.age_distribution")}
+                    </h5>
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
                         <span className="text-sm text-slate-600">18-24</span>
@@ -144,10 +149,12 @@ export const SampleInfluencerProfile = () => {
 
                   {/* Gender Split */}
                   <div>
-                    <h5 className="font-medium text-slate-800 mb-4">Gender Distribution</h5>
+                    <h5 className="font-medium text-slate-800 mb-4">
+                      {t("sampleProfile.gender_distribution")}
+                    </h5>
                     <div className="space-y-3">
                       <div className="flex items-center justify-between">
-                        <span className="text-sm text-slate-600">Female</span>
+                        <span className="text-sm text-slate-600">{t("sampleProfile.female")}</span>
                         <div className="flex items-center space-x-3">
                           <div className="w-24 bg-slate-200 rounded-full h-2">
                             <div className="bg-pink-500 h-2 rounded-full" style={{width: '68%'}}></div>
@@ -155,9 +162,9 @@ export const SampleInfluencerProfile = () => {
                           <span className="text-sm font-medium text-slate-900 w-8">68%</span>
                         </div>
                       </div>
-                      
+
                       <div className="flex items-center justify-between">
-                        <span className="text-sm text-slate-600">Male</span>
+                        <span className="text-sm text-slate-600">{t("sampleProfile.male")}</span>
                         <div className="flex items-center space-x-3">
                           <div className="w-24 bg-slate-200 rounded-full h-2">
                             <div className="bg-blue-500 h-2 rounded-full" style={{width: '30%'}}></div>
@@ -165,9 +172,9 @@ export const SampleInfluencerProfile = () => {
                           <span className="text-sm font-medium text-slate-900 w-8">30%</span>
                         </div>
                       </div>
-                      
+
                       <div className="flex items-center justify-between">
-                        <span className="text-sm text-slate-600">Other</span>
+                        <span className="text-sm text-slate-600">{t("sampleProfile.other")}</span>
                         <div className="flex items-center space-x-3">
                           <div className="w-24 bg-slate-200 rounded-full h-2">
                             <div className="bg-green-500 h-2 rounded-full" style={{width: '2%'}}></div>
@@ -183,30 +190,30 @@ export const SampleInfluencerProfile = () => {
               {/* Action Buttons */}
               <div className="p-8 bg-slate-50 border-t border-slate-100">
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button 
-                    size="lg" 
+                  <Button
+                    size="lg"
                     className="flex-1 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
                   >
                     <MessageCircle className="mr-2 w-5 h-5" />
-                    Request Contact
+                    {t("sampleProfile.request_contact")}
                   </Button>
-                  
-                  <Button 
-                    size="lg" 
-                    variant="outline" 
+
+                  <Button
+                    size="lg"
+                    variant="outline"
                     className="flex-1 border-2 border-slate-300 hover:border-slate-400 text-slate-700 hover:text-slate-900 relative"
                   >
                     <Eye className="mr-2 w-5 h-5" />
-                    View Full Analytics
+                    {t("sampleProfile.view_full_analytics")}
                     <Lock className="ml-2 w-4 h-4 text-amber-600" />
                     <Badge className="absolute -top-2 -right-2 bg-amber-100 text-amber-800 text-xs">
-                      Pro Only
+                      {t("sampleProfile.pro_only")}
                     </Badge>
                   </Button>
                 </div>
-                
+
                 <p className="text-center text-sm text-slate-500 mt-4">
-                  Contact details and advanced analytics available with Pro and Elite plans
+                  {t("sampleProfile.pro_message")}
                 </p>
               </div>
             </CardContent>
