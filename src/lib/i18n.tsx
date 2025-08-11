@@ -92,7 +92,7 @@ const translations: Record<Language, Record<string, string>> = {
     "sampleProfile.request_contact": "Request Contact",
     "sampleProfile.view_full_analytics": "View Full Analytics",
     "sampleProfile.pro_only": "Pro Only",
-    "sampleProfile.pro_message": "Contact details and advanced analytics available with Pro and Elite plans"
+    "sampleProfile.pro_message": "Contact details and advanced analytics available with Pro and Elite plans",
     "campaign.heading": "Campaign Management",
     "campaign.description": "Powerful tools to create, manage, and analyze campaigns that resonate across cultures and borders.",
     "campaign.features.smart_creation.title": "Smart Campaign Creation",
@@ -102,7 +102,7 @@ const translations: Record<Language, Record<string, string>> = {
     "campaign.features.analytics.title": "Real-time Analytics",
     "campaign.features.analytics.description": "Track campaign performance across platforms and regions. Get insights on reach, engagement, conversions, and cultural sentiment.",
     "campaign.features.cross_border.title": "Cross-border Support",
-    "campaign.features.cross_border.description": "Handle multi-currency payments, time zone coordination, and local compliance requirements seamlessly."
+    "campaign.features.cross_border.description": "Handle multi-currency payments, time zone coordination, and local compliance requirements seamlessly.",
     "explore.heading": "Explore Influencers",
     "explore.filters": "Filters",
     "explore.location.all": "All",
@@ -120,7 +120,7 @@ const translations: Record<Language, Record<string, string>> = {
     "explore.category.food": "Food",
     "explore.category.lifestyle": "Lifestyle",
     "explore.column.followers": "Followers",
-    "explore.column.engagement": "Engagement"
+    "explore.column.engagement": "Engagement",
     "howItWorks.title": "How It Works",
     "howItWorks.description": "Simple journeys designed for brands and influencers to connect, collaborate, and succeed together.",
     "howItWorks.brandJourney": "Brand Journey",
@@ -231,7 +231,7 @@ const translations: Record<Language, Record<string, string>> = {
     "sampleProfile.request_contact": "Demander le contact",
     "sampleProfile.view_full_analytics": "Voir toutes les analyses",
     "sampleProfile.pro_only": "Réservé aux pros",
-    "sampleProfile.pro_message": "Les coordonnées et les analyses avancées sont disponibles avec les forfaits Pro et Elite"
+    "sampleProfile.pro_message": "Les coordonnées et les analyses avancées sont disponibles avec les forfaits Pro et Elite",
     "campaign.heading": "Gestion des campagnes",
     "campaign.description": "Des outils puissants pour créer, gérer et analyser des campagnes qui résonnent à travers les cultures et les frontières.",
     "campaign.features.smart_creation.title": "Création de campagne intelligente",
@@ -241,7 +241,7 @@ const translations: Record<Language, Record<string, string>> = {
     "campaign.features.analytics.title": "Analyses en temps réel",
     "campaign.features.analytics.description": "Suivez les performances des campagnes sur les plateformes et les régions. Obtenez des insights sur la portée, l'engagement, les conversions et le sentiment culturel.",
     "campaign.features.cross_border.title": "Support transfrontalier",
-    "campaign.features.cross_border.description": "Gérez en toute simplicité les paiements multidevises, la coordination des fuseaux horaires et les exigences de conformité locales."
+    "campaign.features.cross_border.description": "Gérez en toute simplicité les paiements multidevises, la coordination des fuseaux horaires et les exigences de conformité locales.",
     "explore.heading": "Explorer les influenceurs",
     "explore.filters": "Filtres",
     "explore.location.all": "Tous",
@@ -259,7 +259,7 @@ const translations: Record<Language, Record<string, string>> = {
     "explore.category.food": "Cuisine",
     "explore.category.lifestyle": "Style de vie",
     "explore.column.followers": "Abonnés",
-    "explore.column.engagement": "Engagement"
+    "explore.column.engagement": "Engagement",
     "howItWorks.title": "Comment ça marche",
     "howItWorks.description": "Des parcours simples conçus pour que les marques et les influenceurs se connectent, collaborent et réussissent ensemble.",
     "howItWorks.brandJourney": "Parcours marque",
