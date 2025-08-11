@@ -17,6 +17,7 @@ import {
   MapPin,
   Eye
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import { HeroSection } from "@/components/HeroSection";
 import { HowItWorks } from "@/components/HowItWorks";
 import { PricingSection } from "@/components/PricingSection";
@@ -70,9 +71,11 @@ const Index = () => {
                 <option value="en">EN</option>
                 <option value="fr">FR</option>
               </select>
-              <Button variant="ghost" className="text-slate-700">
-                {t("nav.sign_in")}
-              </Button>
+              <Link to="/login">
+                <Button variant="ghost" className="text-slate-700">
+                  {t("nav.sign_in")}
+                </Button>
+              </Link>
               <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
                 {t("nav.get_started")}
               </Button>
