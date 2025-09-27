@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
-import { LoginButton } from "@/components/auth/LoginButton";
-import { UserMenu } from "@/components/auth/UserMenu";
 import { useAuth } from "@/components/auth/AuthProvider";
 import { useTranslation, Language } from "@/lib/i18n";
 import { useNavigate } from "react-router-dom";
