@@ -5,11 +5,12 @@ import { LoginButton } from "@/components/auth/LoginButton";
 import { UserMenu } from "@/components/auth/UserMenu";
 import { useAuth } from "@/components/auth/AuthProvider";
 import { useTranslation, Language } from "@/lib/i18n";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const { t, language, setLanguage } = useTranslation();
   const { user } = useAuth();
-
+const navigate = useNavigate();
   return (
     <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -50,8 +51,9 @@ export const Header = () => {
               <option value="en">EN</option>
               <option value="fr">FR</option>
             </select>
-            {user ? <UserMenu /> : <LoginButton />}
-            <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+            <Button  onClick={()=>{
+               navigate("/login")
+            }} className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
               {t("nav.get_started")}
             </Button>
           </div>
