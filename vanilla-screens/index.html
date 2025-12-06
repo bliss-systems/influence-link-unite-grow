@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Task List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="filter-panel" id="filterPanel" aria-label="Filters">
+        <header class="panel-header">
+          <span class="panel-title">Filters</span>
+          <button class="icon-button" type="button" data-close-filter aria-label="Close filters">
+            ✕
+          </button>
+        </header>
+
+        <div class="field-group">
+          <label class="field-label" for="startDatePanel">Creation Date</label>
+          <input type="date" id="startDatePanel" class="field-input" placeholder="mm/dd/yyyy" data-start-date />
+          <input type="date" id="endDatePanel" class="field-input" placeholder="mm/dd/yyyy" data-end-date />
+        </div>
+
+        <div class="button-row">
+          <button class="primary" type="button" data-apply>Apply</button>
+          <button class="ghost" type="button" data-reset>Reset</button>
+        </div>
+      </aside>
+
+      <section class="content">
+        <div class="filters-inline">
+          <div class="date-range">
+            <div class="field">
+              <span class="label">Creation Date</span>
+              <div class="inputs">
+                <input type="date" class="field-input" placeholder="mm/dd/yyyy" data-start-date />
+                <input type="date" class="field-input" placeholder="mm/dd/yyyy" data-end-date />
+              </div>
+            </div>
+            <div class="button-row inline-buttons">
+              <button class="primary" type="button" data-apply>Apply</button>
+              <button class="ghost" type="button" data-reset>Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-filter-toggle">
+          <button class="primary" type="button" data-open-filter>Filters</button>
+        </div>
+
+        <div class="table" role="list" aria-label="Tasks">
+          <div class="table-header">
+            <div class="header-cell">Name</div>
+            <div class="header-cell narrow">Creation Date</div>
+            <div class="header-cell narrow"></div>
+          </div>
+          <div id="taskRows"></div>
+        </div>
+      </section>
+
+      <div class="drawer" id="drawer" aria-label="Task details">
+        <div class="drawer-header">
+          <button class="primary" type="button">Save</button>
+          <button class="ghost" type="button" data-close-drawer>Close</button>
+        </div>
+        <div class="drawer-body">
+          <label class="field-label" for="descriptionField">Description</label>
+          <textarea id="descriptionField" class="field-input text-area" readonly></textarea>
+        </div>
+      </div>
+
+      <div class="scrim" id="scrim"></div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
